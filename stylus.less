@@ -14,6 +14,54 @@ atom-text-editor.editor {
     }
 
     .syntax--meta.syntax--property-list.syntax--css {
+      .syntax--support.syntax--type.syntax--property-name.syntax--css {
+        color: #FFFFFF;
+      }
+
+      .syntax--meta.syntax--property-value.syntax--css {
+        .syntax--support.syntax--constant.syntax--property-value.syntax--css {
+          color: #82AAFF;
+        }
+
+        .syntax--constant.syntax--numeric.syntax--css {
+          color: #F78C6A;
+
+          .syntax--keyword.syntax--other.syntax--unit.syntax--css {
+            color: #F07178;
+          }
+        }
+
+        .syntax--string.syntax--quoted.syntax--single.syntax--css {
+          color: #C3E88D;
+        }
+
+        .syntax--string.syntax--quoted.syntax--double.syntax--css {
+          color: #C3E88D;
+        }
+
+        .syntax--meta.syntax--function.syntax--css {
+          .syntax--support.syntax--function.syntax--css {
+            color: #73D1C8;
+          }
+
+          .syntax--string.syntax--css {
+            color: #C3E88D;
+          }
+
+          .syntax--support.syntax--constant.syntax--css {
+            color: #C3E88D;
+          }
+        }
+
+        .syntax--constant.syntax--other.syntax--color.syntax--rgb-value.syntax--css {
+          color: #FFE082;
+        }
+      }
+
+      .syntax--punctuation.syntax--terminator.syntax--rule.syntax--css {
+        color: #89DDF3;
+      }
+
       .syntax--meta.syntax--property-list.syntax--css {
         .syntax--support.syntax--type.syntax--property-name.syntax--css {
           color: #FFFFFF;
@@ -40,12 +88,16 @@ atom-text-editor.editor {
             color: #C3E88D;
           }
 
-          .syntax--meta.syntax--function.syntax--misc.syntax--css {
-            .syntax--support.syntax--function.syntax--misc.syntax--css {
+          .syntax--meta.syntax--function.syntax--css {
+            .syntax--support.syntax--function.syntax--css {
               color: #73D1C8;
             }
 
             .syntax--string.syntax--css {
+              color: #C3E88D;
+            }
+
+            .syntax--support.syntax--constant.syntax--css {
               color: #C3E88D;
             }
           }
